@@ -4,6 +4,7 @@ module "public_testbox" {
     key_name = "sandbox_east"
     subnet_id = "${module.subnet_public.subnet_id}"
     vpc_security_group_ids = ["${module.public_zone.sg_id}"]
+    associate_public_ip_address = true
 
 
     tags = {
