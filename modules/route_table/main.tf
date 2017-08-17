@@ -3,12 +3,12 @@ resource "aws_route_table" "table" {
 
   route = {
     cidr_block     = "0.0.0.0/0"
-    gateway_id     = "${length(var.gateway_id) > 0 ? var.gateway_id : ""}"
+    gateway_id     = "${length(var.internet_gateway_id) > 0 ? var.internet_gateway_id : ""}"
     nat_gateway_id = "${length(var.nat_gateway_id) > 0 ? var.nat_gateway_id : ""}"
   }
 
   tags {
-    Name      = "${title(var.name)}"
+    Name      = "${var.name}"
     Terraform = "true"
   }
 }

@@ -2,7 +2,7 @@ variable "vpc_id" {}
 
 variable "name" {}
 
-variable "gateway_id" {
+variable "internet_gateway_id" {
   default = ""
 }
 
