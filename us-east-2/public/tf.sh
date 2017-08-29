@@ -3,7 +3,7 @@
 terraform remote config \
     -backend=s3 \
     -backend-config="bucket=terraform.rarmstrong-sandbox.com" \
-    -backend-config="key=us-east-2/prod/terraform.tfstate" \
+    -backend-config="key=us-east-2/public/terraform.tfstate" \
     -backend-config="region=us-west-2" 
 
 terraform get
