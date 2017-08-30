@@ -7,6 +7,6 @@ resource "aws_subnet" "public_subnets" {
 
   tags = {
     Name      = "${format("Public_Subnet_%s", element(data.aws_availability_zones.available.names, count.index))}"
-    Terraform = true
+    Terraform = "true"
   }
 }

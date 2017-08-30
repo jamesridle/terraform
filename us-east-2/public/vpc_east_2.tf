@@ -5,6 +5,6 @@ resource "aws_vpc" "east_2" {
 
   tags = {
     Name      = "Sandbox-US-East-2"
-    Terraform = true
+    Terraform = "true"
   }
 }

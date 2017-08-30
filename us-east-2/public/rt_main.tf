@@ -3,7 +3,7 @@ resource "aws_route_table" "main_table" {
 
   tags = {
     Name      = "Main Route Table"
-    Terraform = true
+    Terraform = "true"
   }
 }
 
