@@ -1,7 +1,5 @@
 # Required Resource Variables
-variable "ami" {
-    default = "ami-cd0f5cb6"
-}
+variable "ami" {}
 
 variable "instance_type" {
     default = "t2.micro"

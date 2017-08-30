@@ -21,3 +21,7 @@ output "vpc_default_security_group_id" {
 output "vpc_default_route_table_id" {
   value = "${aws_vpc.east_2.default_route_table_id}"
 }
+
+output "subnet_ids" {
+  value = ["${aws_subnet.public_subnets.*.id}"]
+}
